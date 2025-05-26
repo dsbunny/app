@@ -8,7 +8,7 @@
 		],
 		"strict": true,
 		"esModuleInterop": true,
-		"outDir": "./build",
+		"outDir": "./dist",
 		"baseUrl": "./src",
 		"moduleResolution": "bundler",
 		"resolveJsonModule": true,
