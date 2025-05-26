@@ -2,7 +2,7 @@
 
 import { z } from 'zod';
 
-const AppManifestSchema = z.object({
+export const AppManifestSchema = z.object({
 	name: z.string(),
 	description: z.string(),
 	version: z.string(),

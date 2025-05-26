@@ -1,5 +1,5 @@
 import { z } from 'zod';
-declare const AppManifestSchema: z.ZodObject<{
+export declare const AppManifestSchema: z.ZodObject<{
     name: z.ZodString;
     description: z.ZodString;
     version: z.ZodString;
@@ -34,4 +34,3 @@ declare const AppManifestSchema: z.ZodObject<{
     LunaApp?: ((...args: unknown[]) => unknown) | undefined;
 }>;
 export type AppManifest = z.infer<typeof AppManifestSchema>;
-export {};
