@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"lib": [
+			"esnext",
+			"dom"
+		],
+		"strict": true,
+		"esModuleInterop": true,
+		"outDir": "./build",
+		"baseUrl": "./src",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"noImplicitReturns": true,
+		"noUnusedLocals": false,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"declaration": true
+	},
+	"include": [
+	  	"src/**/*.ts"
+	]
+}

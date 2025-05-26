@@ -1,0 +1,24 @@
+{
+	"name": "@dsbunny/app",
+	"version": "1.0.0",
+	"main": "dist/bundle.mjs",
+	"scripts": {
+		"build": "npm run compile && node --run rollup:esm",
+		"compile": "npx tsc",
+		"rollup:esm": "npx rollup -c rollup.esm.mjs"
+	},
+	"author": "Steve-o <fnjordy@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"three": "^0.176.0",
+		"@ungap/event-target": "^0.2.4"
+	},
+	"devDependencies": {
+		"@types/three": "^0.176.0",
+		"rollup": "^2.79.0",
+		"rollup-plugin-sourcemaps": "^0.6.3",
+		"rollup-plugin-summary": "^2.0.0",
+		"typescript": "^5.8.3"
+	}
+}
+
