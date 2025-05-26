@@ -112,7 +112,6 @@ export abstract class WebGLApp extends AbstractApp {
 }
 
 export type WebGLAppConstructor = {
-	new (...args: any[]): WebGLApp;
 	create(
 		fbo: THREE.WebGLRenderTarget,
 		renderer: THREE.WebGLRenderer,

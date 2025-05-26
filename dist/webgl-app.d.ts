@@ -34,6 +34,5 @@ export declare abstract class WebGLApp extends AbstractApp {
     get width(): number;
 }
 export type WebGLAppConstructor = {
-    new (...args: any[]): WebGLApp;
     create(fbo: THREE.WebGLRenderTarget, renderer: THREE.WebGLRenderer, params: AppParams): WebGLApp;
 };

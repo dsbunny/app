@@ -30,6 +30,5 @@ export declare abstract class WebApp extends AbstractApp {
     get width(): number;
 }
 export type WebAppConstructor = {
-    new (...args: any[]): WebApp;
     create(renderRoot: HTMLElement, params: AppParams): WebApp;
 };

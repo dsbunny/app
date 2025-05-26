@@ -115,7 +115,6 @@ export abstract class WebApp extends AbstractApp {
 }
 
 export type WebAppConstructor = {
-	new (...args: any[]): WebApp;
 	create(
 		renderRoot: HTMLElement,
 		params: AppParams,

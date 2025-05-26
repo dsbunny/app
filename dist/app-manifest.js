@@ -6,10 +6,9 @@ export const AppManifestSchema = z.object({
     version: z.string(),
     author: z.string(),
     license: z.string(),
-    showModal: z.function().optional(),
+    showModal: z.custom().optional(),
     ConfigSchema: z.any().optional(),
-    WebApp: z.function().optional(),
-    WebGLApp: z.function().optional(),
-    LunaApp: z.function().optional(),
+    WebApp: z.custom().optional(),
+    WebGLApp: z.custom().optional(),
 });
 //# sourceMappingURL=app-manifest.js.map
