@@ -107,10 +107,10 @@ export abstract class WebApp extends AbstractApp {
 
 	// Per `HTMLVideoElement`
 	get height(): number {
-		return this.renderRoot.clientHeight;
+		return this.renderRoot.parentElement!.clientHeight;
 	}
 	get width(): number {
-		return this.renderRoot.clientWidth;
+		return this.renderRoot.parentElement!.clientWidth;
 	}
 }
 

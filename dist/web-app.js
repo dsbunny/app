@@ -87,10 +87,10 @@ export class WebApp extends AbstractApp {
     }
     // Per `HTMLVideoElement`
     get height() {
-        return this.renderRoot.clientHeight;
+        return this.renderRoot.parentElement.clientHeight;
     }
     get width() {
-        return this.renderRoot.clientWidth;
+        return this.renderRoot.parentElement.clientWidth;
     }
 }
 //# sourceMappingURL=web-app.js.map
