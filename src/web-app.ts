@@ -1,6 +1,7 @@
 // vim: tabstop=8 softtabstop=0 noexpandtab shiftwidth=8 nosmarttab
 
-import { AbstractApp, AppParams } from './abstract-app.js';
+import { AbstractApp } from './abstract-app.js';
+import { AppParams } from './app-params.js';
 
 export abstract class WebApp extends AbstractApp {
 	protected _lastTime = 0;

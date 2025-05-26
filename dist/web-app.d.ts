@@ -1,4 +1,5 @@
-import { AbstractApp, AppParams } from './abstract-app.js';
+import { AbstractApp } from './abstract-app.js';
+import { AppParams } from './app-params.js';
 export declare abstract class WebApp extends AbstractApp {
     readonly renderRoot: HTMLElement;
     protected _lastTime: number;

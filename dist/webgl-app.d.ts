@@ -1,5 +1,6 @@
 import * as THREE from 'three';
-import { AbstractApp, AppParams } from './abstract-app.js';
+import { AbstractApp } from './abstract-app.js';
+import { AppParams } from './app-params.js';
 export declare abstract class WebGLApp extends AbstractApp {
     readonly fbo: THREE.WebGLRenderTarget;
     readonly renderer: THREE.WebGLRenderer;

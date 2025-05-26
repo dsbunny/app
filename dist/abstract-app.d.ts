@@ -1,7 +1,4 @@
-export type AppParams = {
-    src: string;
-    duration: number;
-} & Record<string, any>;
+import { AppParams } from './app-params.js';
 export declare abstract class AbstractApp extends EventTarget {
     readonly params: AppParams;
     protected constructor(params: AppParams);
