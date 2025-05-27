@@ -2,6 +2,8 @@ import { z } from 'zod';
 import { ConfigShowModalFunction } from './config-modal.js';
 import { WebAppConstructor } from './web-app.js';
 import { WebGLAppConstructor } from './webgl-app.js';
+import { LunaAppConstructor } from './luna-app.js';
+import { BrightSignAppConstructor } from './brightsign-app.js';
 export declare const AppManifestSchema: z.ZodObject<{
     name: z.ZodString;
     description: z.ZodString;
@@ -10,6 +12,8 @@ export declare const AppManifestSchema: z.ZodObject<{
     license: z.ZodString;
     showModal: z.ZodOptional<z.ZodType<ConfigShowModalFunction, z.ZodTypeDef, ConfigShowModalFunction>>;
     ConfigSchema: z.ZodOptional<z.ZodAny>;
+    BrightSignApp: z.ZodOptional<z.ZodType<BrightSignAppConstructor, z.ZodTypeDef, BrightSignAppConstructor>>;
+    LunaApp: z.ZodOptional<z.ZodType<LunaAppConstructor, z.ZodTypeDef, LunaAppConstructor>>;
     WebApp: z.ZodOptional<z.ZodType<WebAppConstructor, z.ZodTypeDef, WebAppConstructor>>;
     WebGLApp: z.ZodOptional<z.ZodType<WebGLAppConstructor, z.ZodTypeDef, WebGLAppConstructor>>;
 }, "strip", z.ZodTypeAny, {
@@ -20,6 +24,8 @@ export declare const AppManifestSchema: z.ZodObject<{
     license: string;
     showModal?: ConfigShowModalFunction | undefined;
     ConfigSchema?: any;
+    BrightSignApp?: BrightSignAppConstructor | undefined;
+    LunaApp?: LunaAppConstructor | undefined;
     WebApp?: WebAppConstructor | undefined;
     WebGLApp?: WebGLAppConstructor | undefined;
 }, {
@@ -30,6 +36,8 @@ export declare const AppManifestSchema: z.ZodObject<{
     license: string;
     showModal?: ConfigShowModalFunction | undefined;
     ConfigSchema?: any;
+    BrightSignApp?: BrightSignAppConstructor | undefined;
+    LunaApp?: LunaAppConstructor | undefined;
     WebApp?: WebAppConstructor | undefined;
     WebGLApp?: WebGLAppConstructor | undefined;
 }>;

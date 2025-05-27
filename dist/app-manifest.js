@@ -8,6 +8,8 @@ export const AppManifestSchema = z.object({
     license: z.string(),
     showModal: z.custom().optional(),
     ConfigSchema: z.any().optional(),
+    BrightSignApp: z.custom().optional(),
+    LunaApp: z.custom().optional(),
     WebApp: z.custom().optional(),
     WebGLApp: z.custom().optional(),
 });
