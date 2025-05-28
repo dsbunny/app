@@ -58,6 +58,8 @@ export abstract class WebGLApp extends AbstractApp {
 
 	load(): void {
 		// No resources to load.
+		this._networkState = HTMLMediaElement.NETWORK_IDLE;
+		this._readyState = HTMLMediaElement.HAVE_ENOUGH_DATA;
 		this.dispatchEvent(new Event('canplay'));
 	}
 
