@@ -75,6 +75,9 @@ export abstract class WebApp extends AbstractApp {
 	play(): Promise<void> {
 		// No resources to play.
 		this._lastTime = performance.now();
+		this._currentTime = 0;
+		this._ended = false;
+		this._error = null;
 		this._paused = false;
 		return Promise.resolve();
 	}

@@ -1,4 +1,7 @@
 # Changelog
+## v1.1.3
+- Reset state on `play()`.
+
 ## v1.1.2
 - Set `readyState` and `networkState` on default `load()` implementation.
 
