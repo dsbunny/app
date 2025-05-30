@@ -1,4 +1,7 @@
 # Changelog
+## v1.2.4
+- Explicit support not require for _BrightSign_, remove.
+
 ## v1.1.3
 - Reset state on `play()`.
 

@@ -5,7 +5,6 @@ import { ConfigShowModalFunction } from './config-modal.js';
 import { WebAppConstructor } from './web-app.js';
 import { WebGLAppConstructor } from './webgl-app.js';
 import { LunaAppConstructor } from './luna-app.js';
-import { BrightSignAppConstructor } from './brightsign-app.js';
 
 export const AppManifestSchema = z.object({
 	name: z.string(),
@@ -15,7 +14,6 @@ export const AppManifestSchema = z.object({
 	license: z.string(),
 	showModal: z.custom<ConfigShowModalFunction>().optional(),
 	ConfigSchema: z.any().optional(),
-	BrightSignApp: z.custom<BrightSignAppConstructor>().optional(),
 	LunaApp: z.custom<LunaAppConstructor>().optional(),
 	WebApp: z.custom<WebAppConstructor>().optional(),
 	WebGLApp: z.custom<WebGLAppConstructor>().optional(),
