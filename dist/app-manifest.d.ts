@@ -1,4 +1,4 @@
-import { z } from 'zod';
+import { z } from 'zod/v4';
 import { ConfigShowModalFunction } from './config-modal.js';
 import { WebAppConstructor } from './web-app.js';
 import { WebGLAppConstructor } from './webgl-app.js';
@@ -9,32 +9,10 @@ export declare const AppManifestSchema: z.ZodObject<{
     version: z.ZodString;
     author: z.ZodString;
     license: z.ZodString;
-    showModal: z.ZodOptional<z.ZodType<ConfigShowModalFunction, z.ZodTypeDef, ConfigShowModalFunction>>;
+    showModal: z.ZodOptional<z.ZodCustom<ConfigShowModalFunction, ConfigShowModalFunction>>;
     ConfigSchema: z.ZodOptional<z.ZodAny>;
-    LunaApp: z.ZodOptional<z.ZodType<LunaAppConstructor, z.ZodTypeDef, LunaAppConstructor>>;
-    WebApp: z.ZodOptional<z.ZodType<WebAppConstructor, z.ZodTypeDef, WebAppConstructor>>;
-    WebGLApp: z.ZodOptional<z.ZodType<WebGLAppConstructor, z.ZodTypeDef, WebGLAppConstructor>>;
-}, "strip", z.ZodTypeAny, {
-    name: string;
-    description: string;
-    version: string;
-    author: string;
-    license: string;
-    showModal?: ConfigShowModalFunction | undefined;
-    ConfigSchema?: any;
-    LunaApp?: LunaAppConstructor | undefined;
-    WebApp?: WebAppConstructor | undefined;
-    WebGLApp?: WebGLAppConstructor | undefined;
-}, {
-    name: string;
-    description: string;
-    version: string;
-    author: string;
-    license: string;
-    showModal?: ConfigShowModalFunction | undefined;
-    ConfigSchema?: any;
-    LunaApp?: LunaAppConstructor | undefined;
-    WebApp?: WebAppConstructor | undefined;
-    WebGLApp?: WebGLAppConstructor | undefined;
-}>;
+    LunaApp: z.ZodOptional<z.ZodCustom<LunaAppConstructor, LunaAppConstructor>>;
+    WebApp: z.ZodOptional<z.ZodCustom<WebAppConstructor, WebAppConstructor>>;
+    WebGLApp: z.ZodOptional<z.ZodCustom<WebGLAppConstructor, WebGLAppConstructor>>;
+}, z.core.$strip>;
 export type AppManifestSchema = z.infer<typeof AppManifestSchema>;

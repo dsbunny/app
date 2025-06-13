@@ -1,4 +1,7 @@
 # Changelog
+## v1.2.5
+- Correct _ZOD_ import for v4.
+
 ## v1.2.4
 - Explicit support not require for _BrightSign_, remove.
 
