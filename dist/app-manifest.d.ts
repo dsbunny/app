@@ -1,4 +1,4 @@
-import { z } from 'zod/v4';
+import * as z from "zod";
 import { ConfigShowModalFunction } from './config-modal.js';
 import { WebAppConstructor } from './web-app.js';
 import { WebGLAppConstructor } from './webgl-app.js';
@@ -15,4 +15,4 @@ export declare const AppManifestSchema: z.ZodObject<{
     WebApp: z.ZodOptional<z.ZodCustom<WebAppConstructor, WebAppConstructor>>;
     WebGLApp: z.ZodOptional<z.ZodCustom<WebGLAppConstructor, WebGLAppConstructor>>;
 }, z.core.$strip>;
-export type AppManifestSchema = z.infer<typeof AppManifestSchema>;
+export type AppManifest = z.infer<typeof AppManifestSchema>;

@@ -1,6 +1,6 @@
 {
 	"name": "@dsbunny/app",
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"main": "dist/index.js",
 	"scripts": {
 		"build": "npm run compile",
@@ -8,10 +8,10 @@
 	},
 	"author": "Steve-o <fnjordy@gmail.com>",
 	"license": "MIT",
-	"dependencies": {
+	"peerDependencies": {
 		"@ungap/event-target": "^0.2.4",
 		"three": "^0.176.0",
-		"zod": "^3.25.0-beta.20250515T215617"
+		"zod": "^4.3.0"
 	},
 	"devDependencies": {
 		"@types/three": "^0.176.0",

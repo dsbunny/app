@@ -1,4 +1,9 @@
 # Changelog
+## v1.2.6
+- Split schema definitions to separate Schema suffix to resolve vsCode and tooling confusion.
+- Update _ZOD_ import again.
+- Move _dependencies_ to _peer_ status.
+
 ## v1.2.5
 - Correct _ZOD_ import for v4.
 

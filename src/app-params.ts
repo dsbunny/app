@@ -8,4 +8,3 @@ export type AppParams = {
 	// Requested duration of the app in seconds.
 	duration: number;
 } & AppBaseParams;
-

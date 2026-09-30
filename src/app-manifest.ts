@@ -1,6 +1,6 @@
 // vim: tabstop=8 softtabstop=0 noexpandtab shiftwidth=8 nosmarttab
 
-import { z } from 'zod/v4';
+import * as z from "zod";
 import { ConfigShowModalFunction } from './config-modal.js';
 import { WebAppConstructor } from './web-app.js';
 import { WebGLAppConstructor } from './webgl-app.js';
@@ -19,4 +19,4 @@ export const AppManifestSchema = z.object({
 	WebGLApp: z.custom<WebGLAppConstructor>().optional(),
 });
 
-export type AppManifestSchema = z.infer<typeof AppManifestSchema>;
+export type AppManifest = z.infer<typeof AppManifestSchema>;
